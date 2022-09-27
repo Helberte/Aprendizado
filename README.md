@@ -10,4 +10,4 @@ Consiste em armazenar os arquivos que utilizo para aprender um novo conceito ou 
 
 - Imagem exemplo:
 
-![Imagem](https://drive.google.com/file/d/1gQNzYvljBYLLVmgfj-nxxTPUofno3Mde/preview)
+![Imagem](img/imagem%20netflix%20carrossel.png)
