@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+
+.swiper-container{
+  position: relative;
+  transition: .3s ease all;
+  height: 116px;
+}
+.swiper-container .swiper-button-next{
+  position: absolute;
+}
+.swiper-slide{
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.swiper-slide img{
+  
+  display: block;
+}
