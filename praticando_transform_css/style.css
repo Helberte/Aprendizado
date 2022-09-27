@@ -1,0 +1,44 @@
+body{
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  width: 196px;
+  height: 110px;
+  
+  border-radius: 12px;
+  background-color: #ce8484;
+  transition: all .2s ease;
+  position: relative;
+}
+.box .interna{
+  height: 0;
+  width: 0;
+
+  background-color:  rgb(24,24,24);
+  border-radius: 0 0 12px 12px;
+  transition: all .2s ease;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  z-index: -10;
+}
+.box.active{
+  
+  height: 300px;
+  width: 250px;
+  position: relative;
+}
+.box .interna.active{
+  opacity: 1;
+  z-index: 1;
+  bottom: 0;
+  height: 150px;
+  width: 250px;
+  
+}
