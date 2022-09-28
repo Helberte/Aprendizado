@@ -1,11 +1,11 @@
-const box = document.getElementsByClassName('box')[0];
-const interna = document.getElementById('interna');
 
-function addClass(){
-  box.classList.add('active');
-  interna.classList.add('active');
+function addClass(v, popap){
+  v.classList.add('active');
+  let teste = document.getElementsByClassName(popap)[0];
+  teste.classList.add('active');
 }
-function removeClass(){
-  box.classList.remove('active');
-  interna.classList.remove('active');
+function removeClass(v, popap){
+  v.classList.remove('active');
+  let outro = document.getElementsByClassName(popap)[0];
+  outro.classList.remove('active');
 }

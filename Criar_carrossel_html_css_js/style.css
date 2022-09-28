@@ -11,6 +11,7 @@ body{
   position: relative;
   transition: .3s ease all;
   height: 116px;
+  
 }
 .swiper-container .swiper-button-next{
   position: absolute;
@@ -20,8 +21,27 @@ body{
   display: flex;
   justify-content: center;
   overflow: hidden;
+
+  position: relative;
 }
+
 .swiper-slide img{
-  
   display: block;
+}
+.teste{
+  border: black 2px solid;
+  height: 150px!important;
+  overflow: visible;
+}
+#interna{
+  background-color:  rgb(24,24,24);
+  border-radius: 0 0 12px 12px;
+  transition: all .2s ease;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  z-index: 100;
+  width: 1500px;
+  height: 2000px;
 }

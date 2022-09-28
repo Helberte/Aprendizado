@@ -1,20 +1,39 @@
+*{
+  box-sizing: border-box;
+}
 body{
   min-height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
+}
+.carrossel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .box{
-  width: 196px;
+  min-width: 196px;
   height: 110px;
-  
+  margin-right: 5px;
   border-radius: 12px;
   background-color: #ce8484;
   transition: all .2s ease;
+}
+.box.active{
+  
+  height: 300px;
+  min-width: 250px;
   position: relative;
 }
+
+
 .box .interna{
   height: 0;
   width: 0;
@@ -28,17 +47,11 @@ body{
   opacity: 0;
   z-index: -10;
 }
-.box.active{
-  
-  height: 300px;
-  width: 250px;
-  position: relative;
-}
 .box .interna.active{
   opacity: 1;
   z-index: 1;
   bottom: 0;
   height: 150px;
   width: 250px;
-  
 }
+
