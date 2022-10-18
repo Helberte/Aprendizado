@@ -1,0 +1,14 @@
+{
+  "name": "api_conecta_banco_postgres",
+  "version": "1.0.0",
+  "description": "criando conexão postgresql",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Helberte C. Arruda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
