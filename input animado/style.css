@@ -37,3 +37,73 @@ header h1::after{
   display: block;
   margin-top: 5px;
 }
+
+
+/* ///////////////////////////////////////// */
+
+
+.form-wrapper{
+  width: 300px;
+  height: 300px;
+  font-family: inherit;
+  background-color: #151d22;
+  box-shadow: 2px 2px 6px 3px rgba(255,255,255,0.1);
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+.form-wrapper .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+  align-items: center;
+}
+.form-wrapper .field .input{
+  width: 100%;
+  font-family: inherit;
+  padding: 15px;
+  color: white;
+  background-color: #171f26;
+  border: 1px solid #1d961d;
+  transition: all .5s ease;
+}
+
+/* label */
+.form-wrapper .field .label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  font-size: 16px;
+  pointer-events: none;
+  color: rgba(255,255 , 255,0.2);
+  transition: all .5s ease;
+}
+
+/* animação */
+
+
+.form-wrapper .field .input::placeholder{
+  opacity: 0;
+  color: rgba(255,255 , 255,0.2);
+  transition: all .4s ease;
+}
+.form-wrapper .field .input:focus + label,
+.form-wrapper .field .input:not(:placeholder-shown) + label
+{
+  top: -18px;
+  left: 1px;
+  color: white;
+}
+/* .form-wrapper .field .input:focus::placeholder{
+  opacity: 1;
+} */
+.form-wrapper .field .input:hover,
+.form-wrapper .field .input:focus,
+.form-wrapper .field .input:not(:placeholder-shown){
+  border: solid 1px white;
+}
+/* É PARA A BORDA FICAR BRANCA SE
+PASSAR O MOUSE POR CIMA
+RECEBER O FOCO
+CASO NÃO ESTEJA VAZIO O INPUT
+*/
