@@ -7,6 +7,7 @@
 
 body{
   padding: 1rem;
+
 }
 
 h1{
@@ -33,6 +34,12 @@ button:hover{
   opacity: 1;
 }
 
+#fade, #modal{
+  transition: .5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
 #fade{
   position: fixed;
   top: 0;
@@ -54,4 +61,31 @@ button:hover{
   max-width: 90%;
   padding: 1.2rem;
   border-radius: .5rem;
+}
+
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.modal-body p{
+  margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide{
+  opacity: 0;
+  pointer-events: none;
+  /* diz quando e sob quais circusntancias o elemento deve 
+  receber o evento do ponteiro do mouse,
+  neste caso, o modal e o fade nunca deverão receber os eventos
+  do ponteiro do mouse quando estiverem com a class hide */
+}
+
+#modal.hide{
+  top: 0;
 }
