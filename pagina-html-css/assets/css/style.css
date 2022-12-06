@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header{
+  height: 500px;
+  background-image: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+header .gradient-top-bottom{
+  background: linear-gradient(to bottom, rgba(4,4,4,0.5), transparent);
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+.gradient-top-bottom .header-menu{
+  height: 60px;
+  border-bottom: solid 0.4px rgba(204, 204, 204,0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 28px;
+  padding-right: 20px;
+  align-items: center;
+  color: white;
+}
+.gradient-top-bottom .header-menu p{
+  font-size: 33px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.gradient-top-bottom .header-menu ul{
+  display: flex;
+  flex-direction: row;
+}
+.gradient-top-bottom .header-menu ul li a{
+  color: white;
+  margin-left: 40px;
+  font-weight: 600;
+  transition: all .5s ease;
+}
+.gradient-top-bottom .header-menu ul li a:hover{
+  color: rgba(255,255,255,0.6);
+}
+.gradient-top-bottom form{
+  height: 470px;
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 10%;
+  top: 100px;
+  color: black;
+  padding: 35px 19px 0 19px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 5px 15px rgba(0,0,0,0.3);
+}
+.gradient-top-bottom form .cadastre-se{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.gradient-top-bottom form .campo{
+  outline: 0;
+  height: 40px;
+  border: rgba(0,0,0,0.3) solid 0.7px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  font-size: 12px;
+}
+.gradient-top-bottom form .sexo{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.gradient-top-bottom form .sexo div{
+  display: flex;
+}
+.gradient-top-bottom form .sexo div label{
+  margin-left: 5px;
+}
+.gradient-top-bottom form .sexo .rad-fem{
+  margin-left: 8px;
+}
+.gradient-top-bottom form .mantenha-conect{
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.gradient-top-bottom form .mantenha-conect label{
+  margin-left: 5px;
+}
+.gradient-top-bottom form button{
+  margin-top: 45px;
+  height: 46px;
+  border: none;
+  background-color: rgb(230,126,34);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.gradient-top-bottom form button:hover{
+  font-size: 20px;
+}
+
+main{
+  width: 935px;
+  max-width: 97%;
+  margin: auto;
+  margin-top: 40px;
+}
+main h1{
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 13px;
+  border-bottom: 0.5px solid rgba(204, 204, 204,0.8);
+}
+main p{
+  text-align: justify;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+main ul{
+  margin-top: 10px;
+  width: 50%;
+}
+main ul li{
+  list-style-type: disc;
+  margin-left: 19px;
+}
+
+footer{
+  height: 60px;
+  background-color: rgb(245,245,245);
+  margin-top: 55px;
+}
+footer .center{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 935px;
+  max-width: 97%;
+  margin: auto;
+  height: inherit;
+  align-items: center;
+}
+footer ul{
+  display: flex;
+  flex-direction: row;
+}
+footer .center small{
+ font-size: 12px;
+ color: rgba(0,0,0,0.7);
+}
+footer .center ul li a{
+  color: rgb(109, 109, 109);
+  margin-left: 50px;
+  font-size: 13px;
+}
+
+@media(max-width: 730px) {
+  main{
+    margin-top: 100px;
+  }
+  main h1{
+    text-align: center;
+  }
+}
