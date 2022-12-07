@@ -14,7 +14,8 @@ header{
   background-image: url('../img/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom right;
+  background-attachment: fixed;
 }
 
 header .gradient-top-bottom{
