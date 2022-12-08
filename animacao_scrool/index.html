@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <!-- 
+  biblioteca
+
+  https://github.com/michalsnik/aos
+
+  https://michalsnik.github.io/aos/
+  -->
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Animação no scrool</h1>
+
+    <div class="cards">
+
+      <div class="card card--1">
+        <h1>Titulo do card 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae modi, vero optio adipisci molestias voluptate! Ipsam molestias exercitationem repudiandae sed earum magni tenetur aperiam eligendi reiciendis dignissimos nostrum, nobis laborum?
+        Impedit exercitationem ipsum iste eum. Nihil quis soluta itaque harum voluptatibus, repellendus libero esse. Non dolor corrupti neque sapiente autem, doloribus ratione nam enim. Odio facilis dolorum saepe asperiores. Placeat.
+        Eos, sunt. Fuga doloremque id nobis. Quidem, quia autem vel debitis, iusto, cumque reiciendis fugit maxime quo soluta culpa aut eius natus repellat ipsum? Quam dolorem repellendus voluptatibus quidem amet!
+        Nobis, eligendi. Reprehenderit eligendi repellat at cumque iusto reiciendis autem magnam doloribus nemo ut illum, corporis, atque facere pariatur eos dolorum consequuntur? Cumque labore quos voluptate cupiditate voluptatibus, deserunt veritatis.
+        Ab doloribus voluptatem quidem unde obcaecati rem magnam tempora delectus commodi, labore nam non sed illo dolorum dicta, aliquam voluptate quos reprehenderit iusto possimus sunt itaque sequi. Officiis, molestias nam?</p>
+        <button>Comprar</button>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1000"  class="card card--2">
+        <h1>Titulo do card 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae modi, vero optio adipisci molestias voluptate! Ipsam molestias exercitigendi repellat at cumque iusto reiciendis autem magnam doloribus nemo ut illum, corporis, atque facere pariatur eos dolorum consequuntur? Cumque labore quos voluptate cupiditate voluptatibus, deserunt veritatis.is, molestias nam?</p>
+        <button>Comprar</button>
+      </div>
+
+      <div data-aos="flip-left" data-aos-duration="1000" class="card card--3">
+        <h1>Titulo do card 3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae modi, vero optio adipisci molestias voluptate! Ipsam molestias exercitagendi repellat at cumque iusto reiciendis autem magnam doloribus nemo ut illum, corporis, atque facere pariatur eos dolorum consequuntur? Cumque labore quos voluptehenderit iusto possimus sunt itaque sequi. Officiis, molestias nam?</p>
+        <button>Comprar</button>
+      </div>
+
+      <div data-aos="flip-down" data-aos-duration="1000"  class="card card--4">
+        <h1>Titulo do card 4</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae modi, vero optio adipisci molestias voluptate! Ipsam molestias exercitationem repudiandae sed earum magni tenetur aperiam eligendi reiciendis dignissimos nostrum, nobis laborum?
+        Impedit exercitationem ipsum iste eum. Nihil quoluptate cupiditate voluptatibusciis, molestias nam?</p>
+        <button>Comprar</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
+
+  <script>
+    const element = document.querySelector(".card--1");
+    VanillaTilt.init(element, {
+      glare: true
+    });
+
+    AOS.init();
+  </script>
+
+</body>
+</html>
