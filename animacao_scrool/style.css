@@ -1,0 +1,47 @@
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #181818;
+}
+.title{
+  text-align: center;
+  color: #059f9f;
+  margin-top: 100px;
+}
+.cards{
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.card{
+  color: #059f9f;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #059f9f;
+}
+.card:not(:first-child){
+  margin-top: 20px;
+}
+.card p{
+  margin-top: 20px;
+  font-size: 16px;
+}
+.card--1 p{
+  line-height: 32px;
+}
+button{
+  margin-top: 30px;
+  padding: 20px 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: gray;
+}
+
