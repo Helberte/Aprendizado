@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<meuComponente:ContentPage
+<ContentPage
     x:Class="MauiContentPage.MainPage"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:meuComponente="http://schemas.microsoft.com/dotnet/2021/maui">
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <meuComponente:ScrollView>
-        <meuComponente:VerticalStackLayout Padding="30,0" Spacing="25">
-            <meuComponente:Image
-                meuComponente:SemanticProperties.Description="dot net bot in a race car number eight"
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image
                 Aspect="AspectFit"
                 HeightRequest="185"
+                SemanticProperties.Description="dot net bot in a race car number eight"
                 Source="dotnet_bot.png" />
 
-            <meuComponente:Label
-                meuComponente:SemanticProperties.HeadingLevel="Level1"
-                meuComponente:Style="{meuComponente:StaticResource Headline}"
+            <Label
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
                 Text="Hello, World!" />
 
-            <meuComponente:Label
-                meuComponente:SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                meuComponente:SemanticProperties.HeadingLevel="Level2"
-                meuComponente:Style="{meuComponente:StaticResource SubHeadline}"
+            <Label
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.HeadingLevel="Level2"
+                Style="{StaticResource SubHeadline}"
                 Text="Welcome to &#10;.NET Multi-platform App UI" />
 
-            <meuComponente:Button
+            <Button
                 x:Name="CounterBtn"
-                meuComponente:SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill"
+                SemanticProperties.Hint="Counts the number of times you click"
                 Text="Click me" />
-        </meuComponente:VerticalStackLayout>
-    </meuComponente:ScrollView>
+        </VerticalStackLayout>
+    </ScrollView>
 
-</meuComponente:ContentPage>
+</ContentPage>
