@@ -10,9 +10,12 @@
             HorizontalOptions="Center"
             Text="02"
             VerticalOptions="Center" />
-        <Button
-            Clicked="Button_Clicked"
-            HorizontalOptions="End"
-            Text="Prosseguir" />
+        <HorizontalStackLayout>
+            <Button
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Start"
+                Text="Prosseguir" />
+            <Button Clicked="OnButtonClickedVoltar" Text="Voltar" />
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
