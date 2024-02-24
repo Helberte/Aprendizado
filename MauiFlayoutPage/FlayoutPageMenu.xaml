@@ -18,8 +18,13 @@
     <!--  Conteúdo principal que já vai vir aberto  -->
     <FlyoutPage.Detail>
 
-        <!--  Página de conteúdo  -->
-        <pages:Page1 />
+        <NavigationPage>
+            <x:Arguments>
+                <!--  Página de conteúdo  -->
+                <pages:Page1 />
+            </x:Arguments>
+        </NavigationPage>
+
 
     </FlyoutPage.Detail>
 </FlyoutPage>
