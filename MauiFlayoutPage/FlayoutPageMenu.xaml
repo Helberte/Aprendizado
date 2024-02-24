@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:pages="clr-namespace:MauiFlayoutPage"
-            x:Class="MauiFlayoutPage.FlayoutPageMenu"
-            Title="FlayoutPageMenu">
-    
-   <!--define o menu-->
+<FlyoutPage
+    x:Class="MauiFlayoutPage.FlayoutPageMenu"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MauiFlayoutPage"
+    Title="FlayoutPageMenu"
+    FlyoutLayoutBehavior="Popover">
+
+    <!--  define o menu  -->
     <FlyoutPage.Flyout>
-        
-        <!-- Página de menu-->
-        <pages:Menu/>
-        
+
+        <!--  Página de menu  -->
+        <pages:Menu />
+
     </FlyoutPage.Flyout>
-    
-    <!--Conteúdo principal que já vai vir aberto-->
+
+    <!--  Conteúdo principal que já vai vir aberto  -->
     <FlyoutPage.Detail>
-        
-        <!--Página de conteúdo-->
-        <pages:Page1/>
-        
+
+        <!--  Página de conteúdo  -->
+        <pages:Page1 />
+
     </FlyoutPage.Detail>
 </FlyoutPage>
