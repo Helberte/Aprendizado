@@ -13,7 +13,7 @@ public partial class Menu : ContentPage
         {
             if (App.Current.MainPage is not null) 
             { 
-                ((FlyoutPage)App.Current.MainPage).Detail = new Page1();
+                ((FlyoutPage)App.Current.MainPage).Detail = new NavigationPage(new Page1());
             }
         }
 
@@ -26,7 +26,7 @@ public partial class Menu : ContentPage
         {
             if (App.Current.MainPage is not null)
             {
-                ((FlyoutPage)App.Current.MainPage).Detail = new Page2();
+                ((FlyoutPage)App.Current.MainPage).Detail = new NavigationPage(new Page2());
             }
         }
     }
@@ -37,7 +37,7 @@ public partial class Menu : ContentPage
         {
             if (App.Current.MainPage is not null)
             {
-                ((FlyoutPage)App.Current.MainPage).Detail = new Page3();
+                ((FlyoutPage)App.Current.MainPage).Detail = new NavigationPage(new Page3());
             }
         }
     }
