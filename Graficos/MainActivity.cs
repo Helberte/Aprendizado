@@ -22,13 +22,12 @@ namespace Graficos
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity
     {
-        readonly List<ChartEntry> entries = new List<ChartEntry>();
-
-        private ChartView chartView = null;
-        private System.Timers.Timer meuTimer = null;
-        private HorizontalScrollView scrollView = null;
-        private BarChart barras;
-        private int valorAleatorio;
+        readonly List<ChartEntry>     entries         = new List<ChartEntry>();
+        private  ChartView            chartView       = null;
+        private  System.Timers.Timer  meuTimer        = null;
+        private  HorizontalScrollView scrollView      = null;
+        private  BarChart             barras;
+        private  int                  valorAleatorio;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,23 +36,23 @@ namespace Graficos
             SetContentView(Resource.Layout.activity_main);
 
             // obtém as referências do layout
-            chartView = FindViewById<ChartView>(Resource.Id.chartView);
-            scrollView = FindViewById<HorizontalScrollView>(Resource.Id.scrollView);
+            chartView         = FindViewById<ChartView>(Resource.Id.chartView);
+            scrollView        = FindViewById<HorizontalScrollView>(Resource.Id.scrollView);
 
             // inicializa o timer
-            meuTimer = new System.Timers.Timer(1000);
+            meuTimer          = new System.Timers.Timer(1000);
             meuTimer.Elapsed += MeuTimer_Elapsed;
 
             // gera valor randomico
-            valorAleatorio = new Random().Next(500, 600);
+            valorAleatorio    = new Random().Next(500, 600);
 
             // adiciona um item que será uma barra no gráfico
             entries.Add(
                 new ChartEntry(valorAleatorio)
                 {
-                    Label = "-",
+                    Label      = "-",
                     ValueLabel = valorAleatorio.ToString(),
-                    Color = valorAleatorio < 550 ? SKColor.Parse("#FF6C6C") : SKColor.Parse("#D6D547")
+                    Color      = valorAleatorio < 550 ? SKColor.Parse("#FF6C6C") : SKColor.Parse("#D6D547")
                 }
             );
 
@@ -61,15 +60,15 @@ namespace Graficos
             barras = new BarChart
             {
                 LabelOrientation = Microcharts.Orientation.Vertical,
-                IsAnimated = true,
-                Entries = entries,
-                Margin = 10,
-                BackgroundColor = SKColor.Parse("#FFFFFF")
+                IsAnimated       = true,
+                Entries          = entries,
+                Margin           = 10,
+                BackgroundColor  = SKColor.Parse("#FFFFFF")
             };
             barras.IsAnimated = false;
 
             // seta propriedade com o gráfico no elemento de tela
-            chartView.Chart = barras;
+            chartView.Chart   = barras;
 
             // inicia o timer
             meuTimer.Start();
@@ -87,9 +86,9 @@ namespace Graficos
                 entries.Add(
                     new ChartEntry(valorAleatorio)
                     {
-                        Label = "-",
+                        Label      = "-",
                         ValueLabel = valorAleatorio.ToString(),
-                        Color = valorAleatorio < 550 ? SKColor.Parse("#FF6C6C") : SKColor.Parse("#D6D547")
+                        Color      = valorAleatorio < 550 ? SKColor.Parse("#FF6C6C") : SKColor.Parse("#D6D547")
                     }
                 );
 
@@ -102,8 +101,8 @@ namespace Graficos
                 chartView.LayoutParameters = layoutParams;
 
                 // reinicia a propriedade que contém o gráfico
-                chartView.Chart = null;
-                chartView.Chart = barras;
+                chartView.Chart    = null;
+                chartView.Chart    = barras;
 
                 // move o scroll para o fim do horizontalscroll
                 scrollView.ScrollX = 16 * entries.Count;
@@ -125,6 +124,5 @@ namespace Graficos
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
     }
 }
